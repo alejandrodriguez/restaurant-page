@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto&display=swap');
+
+:root {
+    
+}
+
+body {
+    font-family: 'font-family: 'Roboto', sans-serif;';
+    background-color: blanchedalmond;
+}
+
+h1 {
+    font-family: 'Gochi Hand', sans-serif;
+}
+
 .logo {
     width: 70px;
+    cursor: pointer;
 }
 
 .mealimg {
@@ -8,9 +24,26 @@
 
 nav {
     display: flex;
-    align-items: center;
 }
 
 nav > div {
     flex: 1;
+    border-bottom: 1px ridge black;
+}
+
+button {
+    border: 1px ridge black;
+    padding: 5px 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.selected {
+    border: 2px ridge black;
+    border-bottom: none;
 }
