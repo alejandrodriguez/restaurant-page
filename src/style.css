@@ -1,0 +1,16 @@
+.logo {
+    width: 70px;
+}
+
+.mealimg {
+    width: 500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > div {
+    flex: 1;
+}
