@@ -1,0 +1,1 @@
+This simple website was created as a means to practice the fundamentals of managing a project and its dependencies through Webpack.
