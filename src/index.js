@@ -1,11 +1,15 @@
 import initializeWebsite from './initialize-website';
 import './style.css';
-import { changeToContactPage } from './contact-page.js';
+import { goHome } from './go-home.js'
+import { goToContactPage } from './contact-page.js';
+import { goToMenuPage } from './menu-page.js';
 
 initializeWebsite();
 
+const logo = document.querySelector('.logo');
 const contactBtn = document.querySelector('.contactbtn');
-const menuBtn = document.querySelector('menubtn');
+const menuBtn = document.querySelector('.menubtn');
 
-contactBtn.addEventListener('click', changeToContactPage);
-// menuBtn.addEventListener('click', changeToMenuPage);
+logo.addEventListener('click', goHome);
+contactBtn.addEventListener('click', goToContactPage);
+menuBtn.addEventListener('click', goToMenuPage);

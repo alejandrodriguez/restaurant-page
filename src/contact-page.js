@@ -1,6 +1,6 @@
-export function changeToContactPage() {
-    const newContent = document.createElement('div');
+export function goToContactPage() {
     const content = document.querySelector('#content');
+    const newContent = document.createElement('div');
     const nav = document.querySelector('nav');
     const contactBtn = document.querySelector('.contactbtn');
     const menuBtn = document.querySelector ('.menubtn');
@@ -17,7 +17,7 @@ export function changeToContactPage() {
     const managerBankInfo = document.createElement('h4');
     const managerDarkestSecret = document.createElement('h4');
 
-    content.classList.add('content');
+    newContent.id = 'content';
     managerPhoto.classList.add('managerphoto');
 
     managerPhoto.setAttribute('src', '../src/images/manager.jpeg');
