@@ -47,3 +47,20 @@ button:hover {
     border: 2px ridge black;
     border-bottom: none;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+
+.menuwrapper > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    max-width: 50vw;
+}

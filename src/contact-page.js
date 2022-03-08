@@ -4,7 +4,7 @@ export function goToContactPage() {
     const nav = document.querySelector('nav');
     const contactBtn = document.querySelector('.contactbtn');
     const menuBtn = document.querySelector ('.menubtn');
-    const managerWrapper = document.createElement('div');
+    const main = document.createElement('main');
     const managerPhoto = document.createElement('img');
     const managerName = document.createElement('h2');
     const managerEmail = document.createElement('h4');
@@ -37,18 +37,18 @@ export function goToContactPage() {
     addressWrapper.appendChild(managerAddress);
     addressWrapper.appendChild(addressCaption);
 
-    managerWrapper.appendChild(managerPhoto);
-    managerWrapper.appendChild(managerName);
-    managerWrapper.appendChild(managerEmail);
-    managerWrapper.appendChild(managerPhone);
-    managerWrapper.appendChild(managerPersonalPhone);
-    managerWrapper.appendChild(addressWrapper);
-    managerWrapper.appendChild(managerSS);
-    managerWrapper.appendChild(managerBankInfo);
-    managerWrapper.appendChild(managerDarkestSecret);
+    main.appendChild(managerPhoto);
+    main.appendChild(managerName);
+    main.appendChild(managerEmail);
+    main.appendChild(managerPhone);
+    main.appendChild(managerPersonalPhone);
+    main.appendChild(addressWrapper);
+    main.appendChild(managerSS);
+    main.appendChild(managerBankInfo);
+    main.appendChild(managerDarkestSecret);
 
     newContent.appendChild(nav);
-    newContent.appendChild(managerWrapper);
+    newContent.appendChild(main);
 
     content.remove();
 

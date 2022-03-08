@@ -1,1 +1,1 @@
-This simple website was created as a means to practice the fundamentals of managing a project and its dependencies through Webpack.
+This simple website was created as a means to practice the fundamentals of managing a project and its dependencies through Webpack. The CSS styling is minimal (and admittedly leaves a lot to be desired), but it is neglected intentionally. Instead, this project gave me the opportunity to practice Webpack, as mentioned before, as well as a workflow that generates the DOM almost entirely throgh Javascript instead of the index.html file.

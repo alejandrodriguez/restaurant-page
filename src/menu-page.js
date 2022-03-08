@@ -4,7 +4,7 @@ export function goToMenuPage() {
     const nav = document.querySelector('nav');
     const contactBtn = document.querySelector('.contactbtn');
     const menuBtn = document.querySelector ('.menubtn');
-    const menuWrapper = document.createElement('div');
+    const main = document.createElement('main');
     const appetizerWrapper = document.createElement('div');
     const entreeWrapper = document.createElement('div');
     const dessertWrapper = document.createElement('div');
@@ -110,14 +110,16 @@ export function goToMenuPage() {
         drinkWrapper.appendChild(drinks[i]);
     }
 
-    menuWrapper.appendChild(appetizerWrapper);
-    menuWrapper.appendChild(entreeWrapper);
-    menuWrapper.appendChild(dessertWrapper);
-    menuWrapper.appendChild(drinkWrapper);
+    main.appendChild(appetizerWrapper);
+    main.appendChild(entreeWrapper);
+    main.appendChild(dessertWrapper);
+    main.appendChild(drinkWrapper);
 
     newContent.id = 'content';
     newContent.appendChild(nav);
-    newContent.appendChild(menuWrapper);
+    newContent.appendChild(main);
+
+    main.classList.add('menuwrapper');
 
     content.remove();
 

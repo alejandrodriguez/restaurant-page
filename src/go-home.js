@@ -1,5 +1,6 @@
 export function goHome() {
     const content = document.querySelector('#content');
+    const main = document.createElement('main');
     const newContent = document.createElement('div');
     const nav = document.querySelector('nav');
     const contactBtn = document.querySelector('.contactbtn');
@@ -18,10 +19,12 @@ export function goHome() {
 
     mealImg.classList.add('mealimg');
 
+    main.appendChild(restaurantName);
+    main.appendChild(mealImg);
+    main.appendChild(quote);
+
     newContent.appendChild(nav);
-    newContent.appendChild(restaurantName);
-    newContent.appendChild(mealImg);
-    newContent.appendChild(quote);
+    newContent.appendChild(main);
 
     content.remove();
 

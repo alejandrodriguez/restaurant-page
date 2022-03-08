@@ -1,5 +1,6 @@
 export default function initializeWebsite() {
     const content = document.querySelector('#content');
+    const main = document.createElement('main');
     const nav = document.createElement('nav');
     const logoWrapper = document.createElement('div');
     const logo = document.createElement('img');
@@ -29,9 +30,11 @@ export default function initializeWebsite() {
     menuBtn.classList.add('menubtn');
     mealImg.classList.add('mealimg');
 
+    main.appendChild(restaurantName);
+    main.appendChild(restaurantName);
+    main.appendChild(mealImg);
+    main.appendChild(quote);
+
     content.appendChild(nav);
-    content.appendChild(restaurantName);
-    content.appendChild(restaurantName);
-    content.appendChild(mealImg);
-    content.appendChild(quote);
+    content.appendChild(main);
 }
